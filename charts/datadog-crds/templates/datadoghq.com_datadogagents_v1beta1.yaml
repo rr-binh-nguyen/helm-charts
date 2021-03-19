@@ -2216,6 +2216,10 @@ spec:
                     enableTCPQueueLength:
                       description: EnableTCPQueueLength enables the TCP queue length eBPF-based check.
                       type: boolean
+                    enableRuntimeCompiler:
+                        description: EnableRuntimeCompiler enables runtime compilation of 
+                          eBPF programs in the system probe
+                        type: boolean
                     enabled:
                       description: 'Enable this to activate live process monitoring. Note: /etc/passwd is automatically mounted to allow username resolution. See also: https://docs.datadoghq.com/graphing/infrastructure/process/#kubernetes-daemonset'
                       type: boolean
