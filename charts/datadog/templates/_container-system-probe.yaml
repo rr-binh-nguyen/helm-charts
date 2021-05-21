@@ -84,6 +84,9 @@
     - name: opensuse-repos-dir
       mountPath: /etc/zypp
       readOnly: true
+    - name: rpm-db-dir
+      path: /var/lib/rpm
+      readOnly: true
 {{- end }}
 {{- if .Values.agents.volumeMounts }}
 {{ toYaml .Values.agents.volumeMounts | indent 4 }}

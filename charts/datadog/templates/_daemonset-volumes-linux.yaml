@@ -82,6 +82,9 @@
 - hostPath:
     path: /etc/zypp
   name: opensuse-repos-dir
+- hostPath:
+    path: /var/lib/rpm
+  name: rpm-db-dir
 {{- end }}
 {{- end }}
 {{- if or .Values.datadog.processAgent.enabled (eq (include "should-enable-system-probe" .) "true") (eq (include "should-enable-security-agent" .) "true") }}
